@@ -1,0 +1,116 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>
+            Mérés
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="container">
+        <p class="accTitle">Gyorsulás: </p>
+        <ion-card>
+            <ion-card-header class="header-padding">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col class="cord" width-33 text-center>
+                            X
+                        </ion-col>
+                        <ion-col class="cord" width-33 text-center>
+                            Y
+                        </ion-col>
+                        <ion-col class="cord" width-33 text-center>
+                            Z
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-header>
+            <ion-card-content class="content-padding">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col width-33 text-center>
+                            <div class="acceleration" [innerText]="accelerometerX"></div>
+                            <div class="unit">m/s<span>2</span></div>
+                            <div class="clear"></div>
+                        </ion-col>
+                        <ion-col width-33 text-center>
+                            <div class="acceleration" [innerText]="accelerometerX"></div>
+                            <div class="unit">m/s<span>2</span></div>
+                            <div class="clear"></div>
+                        </ion-col>
+                        <ion-col width-33 text-center>
+                            <div class="acceleration" [innerText]="accelerometerZ"></div>
+                            <div class="unit">m/s<span>2</span></div>
+                            <div class="clear"></div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+
+
+        <p class="locTitle">Gps: </p>
+        <ion-card>
+            <ion-card-header class="header-padding">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col class="cord" width-33 text-center>
+                            SZ
+                        </ion-col>
+                        <ion-col class="cord" width-33 text-center>
+                            H
+                        </ion-col>
+                        <ion-col class="cord" width-33 text-center>
+                            M
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-header>
+            <ion-card-content class="content-padding">
+                <ion-grid>
+                    <ion-row>
+                        <ion-col width-33 text-center>
+                            <div class="geolocation" [innerText]="latitude"></div>
+                        </ion-col>
+                        <ion-col width-33 text-center>
+                            <div class="geolocation" [innerText]="longitude"></div>
+                        </ion-col>
+                        <ion-col width-33 text-center>
+                            <div class="geolocation" [innerText]="altitude"></div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+
+    <div class="time">
+        <span class="record">Felvétel: </span>
+        <span class="minutes" [innerText]="showMinutes"></span>
+        <span class="seconds" [innerText]="showSeconds"></span>
+    </div>
+</ion-content>
+    <ion-footer>
+        <ion-toolbar color="primary">
+            <ion-grid>
+                <ion-row>
+                    <ion-col width-50 text-center>
+                        <button (click)="startB()" ion-button color="light" outline>
+                            Inditás
+                        </button>
+                    </ion-col>
+                    <ion-col width-50 text-center>
+                        <button (click)="stopB()" ion-button color="light" outline>
+                            Leállitás
+                        </button>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-toolbar>
+    </ion-footer>
+
+
+
+
+

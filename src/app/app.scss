@@ -1,0 +1,95 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.container{
+  width: 100%;
+  margin: 20px auto;
+}
+
+.acceleration, .unit{
+  width:50%;
+  float: left;
+  margin-top: 0;
+
+}
+
+.acceleration{
+  text-align: right;
+  font-size: 18px;
+}
+
+.cord{
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 !important;
+
+}
+
+.accTitle, .locTitle{
+  margin: 0 0 10px 4px;
+  font-size: 18px;
+}
+
+.locTitle{
+  margin-top: 20px;
+}
+
+
+.header-padding, .content-padding{
+  padding: 0 !important;
+}
+
+
+.content-padding{
+  padding: 10px 0 !important;
+}
+
+.unit{
+  width:45%;
+  text-align: left;
+  font-size: 12px;
+  margin-left: 3%;
+  margin-top: 7px;
+  position: relative;
+}
+
+.unit > span{
+  position: absolute;
+  font-size: 12px;
+  top: -6px;
+}
+
+.clear{
+  clear: both;
+}
+
+.time{
+  width:100%;
+  position: fixed;
+  bottom: 76px;
+  left: 10px;
+
+}
+
+.record, .minutes, .seconds{
+  font-size: 18px;
+}
+
+
+.geolocation{
+  font-size: 18px;
+  text-align: center;
+}
